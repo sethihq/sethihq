@@ -6,6 +6,6 @@
 </p>
 
 <p align="center">
-  <a href="https://x.com/sethiHQ"><img alt="X" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/sethihq/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://x.com/sethiHQ"><picture><source media="(prefers-color-scheme: dark)" srcset="btn-x-dark.svg"><img alt="x @sethiHQ" src="btn-x-light.svg"></picture></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/sethihq/"><picture><source media="(prefers-color-scheme: dark)" srcset="btn-linkedin-dark.svg"><img alt="linkedin sethihq" src="btn-linkedin-light.svg"></picture></a>
 </p>

@@ -10,7 +10,7 @@
 <!-- Typing Intro -->
 <p align="center">
   
-<img src="https://readme-typing-svg.demolab.com?font=Geist+Mono&size=24&pause=1000&center=true&vCenter=true&width=480&color=ffffff&lines=he%2Fhim+%E2%80%89%E2%80%A2%E2%80%89+designer+%2B+engineer;Design+%2B+Code+%3D+%F0%9F%A4%8C;Pixels%2C+hardware+and+everything+between" />
+<img src="https://readme-typing-svg.demolab.com?font=Geist+Mono&size=24&pause=1000&center=true&vCenter=true&width=480&color=ffffff&lines=he%2Fhim+%E2%80%89%E2%80%A2%E2%80%89+designer+who+codes;Design+%2B+Code+%3D+%F0%9F%A4%8C;Making+something+heavy" />
   
 </p>
 
@@ -18,31 +18,31 @@
 <h1 align="center" style="font-family:Instrument Serif;">नमस्ते (Namaste), <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> I'm Rajat Sethi!</h1>
 <h3 align="center" style="font-family:Geist;">23 y/o · Product Designer & Design Engineer · Hardware, Mixed Media & Creative Tech</h3>
 <p align="center">
-  <em>Believer of <a href="https://www.workingtheorys.com/p/make-something-heavy" target="_blank">making something heavy</a> 👨🏻‍🎨</em><br/>
-  <em>Currently building with code, a little hardware on my desk, and anything that mixes media 🍃</em>
+  <em>Big believer in <a href="https://www.workingtheorys.com/p/make-something-heavy" target="_blank">making something heavy</a>, one big thing over a pile of light ones 👨🏻‍🎨</em><br/>
+  <em>Right now that means writing code, tinkering with a little hardware on my desk and mixing media until it feels right 🍃</em>
 </p>
 
 ---
 
 ### 🧠 About Me
 
-- 🧍‍♂️ 23 y/o product designer turned design engineer  
-- 🎨 Designing in **Figma**, then building it myself in **Next.js**, **React** & **WebGL**  
-- 🔌 Tinkering with a bit of hardware: **ESP32s**, tiny OLEDs and a new home screen for my [TV](https://github.com/sethihq/baron-tv)  
-- 🎞️ Mixing media: ASCII art, dot grid video, and motion in **Blender** & **Cavalry**  
-- 🤖 My workflow is powered by **Claude Code**, **Cursor**, and a lot of coffee ☕  
-- ✨ I believe in design that *feels just right*: systems, motion, emotion  
+- 🧍‍♂️ I'm 23, I started out as a self-taught product designer, and these days I build most of what I design too  
+- 🎨 Most things start in **Figma** and end up in **Next.js**, **React** or **WebGL**, which is pretty much my favourite part  
+- 🔌 I've been getting into a bit of hardware, mostly **ESP32s** and tiny OLEDs, and I made a new home screen for my [TV](https://github.com/sethihq/baron-tv), which runs on 512 MB of RAM  
+- 🎞️ I also like mixing media, so you'll find ASCII art, dot grid videos and motion stuff I made in **Blender** and **Cavalry** around here  
+- 🤖 Most days I've got **Claude Code** and **Cursor** open, plus a lot of coffee ☕  
+- ✨ What I care about most is design that *feels just right*, the systems, the motion and the way it makes you feel  
 
-> I still design with purpose, and now I build it too, so every screen gets its story.
+> I used to say I don't code much, but now I build most of what I design, and every screen still gets its story.
 
 ---
 
 ### 💻 Now  
 
-🎨 Polishing my design taste
-🔭 Exploring AI workflows and automation tools  
-🌱 Learning creative coding - p5.js, shaders, and WebGL experiments  
-🧠 Sharpening meta-skills for the post-AI era:  
+🎨 Still polishing my design taste, one small project at a time  
+🔭 Exploring AI workflows and building little tools that automate the boring parts  
+🌱 Learning creative coding, which started with p5.js and is now mostly shaders and WebGL experiments  
+🧠 Working on the meta skills I think matter even more now that AI writes a lot of the code:  
 &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;Thinking Clearly  
 &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;First Principles Thinking  
 &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;Systems Thinking  
@@ -52,7 +52,7 @@
 
 ---
 
-### 🛠 Design Stack
+### 🛠 Stuff I use
 
 <div align="center">
 
@@ -83,7 +83,7 @@
 
 ```bash
 > ritual.sh
-🎧 Lofi → ✏️ Notes → 🎨 Figma → ☕ Break → 🔁 Iterate → ✨ Ship
+🎧 Lofi → ✏️ Notes → 🎨 Figma → 💻 Code → ☕ Break → 🔁 Iterate → ✨ Ship
 ```
 
 ---
@@ -105,7 +105,7 @@
 
 ---
 
-<h2 align="left">Reach me on <img align = "center"  src="https://media0.giphy.com/media/jqNPzdTTxQfOgOqpO4/source.gif" width="20"></h2>
+<h2 align="left">Say hi on <img align = "center"  src="https://media0.giphy.com/media/jqNPzdTTxQfOgOqpO4/source.gif" width="20"></h2>
 
 <p align="center">
   <a href="https://twitter.com/sethiHQ" target="_blank">
@@ -116,16 +116,18 @@
   </a>
 </p>
 
+<p align="center">If you're building something weird, send it my way, I wanna see it :)</p>
+
 ---
 
 ### 👨‍💻 Terminal Outro
 
 ```bash
 > rajat@figma:~$ whoami
-> Product Designer • No-Code Hacker • AI Whisperer
+> Product Designer • Design Engineer • Part-time Hardware Guy
 
 > rajat@figma:~$ echo "Good design?"
-> "As little design as possible." – Dieter Rams
+> "As little design as possible," said Dieter Rams
 
 > rajat@figma:~$ echo "Hello, world!"
 > Rendering rajat.fig

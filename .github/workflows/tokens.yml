@@ -1,4 +1,4 @@
-name: card
+name: tokens
 
 on:
   schedule:
@@ -9,17 +9,15 @@ permissions:
   contents: write
 
 jobs:
-  card:
+  tokens:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - run: python3 -I tools/card.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: python3 -I tools/tokens.py
       - name: commit
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add card-light.svg card-dark.svg
-          git diff --cached --quiet || git commit -m "chore: refresh profile card stats"
+          git add tokens-light.svg tokens-dark.svg
+          git diff --cached --quiet || git commit -m "chore: refresh tokenmaxxing card"
           git push

@@ -1,11 +1,15 @@
-<a href="https://x.com/sethiHQ">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="card-dark.svg">
-    <img alt="rajat sethi, product designer and design engineer" src="card-light.svg" width="100%">
-  </picture>
-</a>
+## rajat sethi
+
+i design products and then build them, mostly for the screen, now and then for the desk, with some mixed media and creative tech along the way :)
 
 <p align="left"><a href="https://x.com/sethiHQ">x</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/sethihq/">linkedin</a></p>
+
+<a href="https://tokenmaxxing.sh/sethihq">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="tokens-dark.svg">
+    <img alt="my tokenmaxxing score and a 2026 heatmap of the tokens i burn each day" src="tokens-light.svg" width="100%">
+  </picture>
+</a>
 
 ### things i've made
 

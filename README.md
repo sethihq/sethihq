@@ -1,11 +1,7 @@
 <p align="center">
-  hey, i'm rajat :) i design products and then build them myself, and lately that's spilled into a bit of hardware, mixed media and creative tech, and most of it starts in figma and ends up as code.
-</p>
-
-<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="ascii-dark.svg">
-    <img alt="ascii portrait of rajat sethi" src="ascii-light.svg" width="420">
+    <img alt="hey, i'm rajat :) i design and build products, and design engineering is my favourite part of it. lately i've been experimenting with hardware, creative tech, projection mapping and mixed media, and i'm learning to dj too." src="ascii-light.svg" width="515">
   </picture>
 </p>
 

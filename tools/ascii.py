@@ -1,7 +1,8 @@
 """Build the portrait: my face drawn with the letters of my intro.
 
-Everything is visible from the first frame. A few scattered letters brighten
-now and then and the cursor after the intro blinks. Writes ascii-light.svg and ascii-dark.svg at the repo root.
+Everything is visible from the first frame. A band of blue light slides down
+the face every 6 seconds, a few scattered letters brighten now and then, and
+the cursor after the intro blinks. Writes ascii-light.svg and ascii-dark.svg at the repo root.
 Stdlib only. The density grid lives in tools/portrait-levels.txt (0 to 5).
 """
 
@@ -22,7 +23,7 @@ MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace"
 
 THEMES = {
     "light": dict(ink="#24292f", band="#2f6fed", text="#57606a", caret="#2f6fed", line="#d0d7de"),
-    "dark": dict(ink="#e6edf3", band="#7aa7ff", text="#9da7b3", caret="#7aa7ff", line="#30363d"),
+    "dark": dict(ink="#e6edf3", band="#4f86ff", text="#9da7b3", caret="#7aa7ff", line="#30363d"),
 }
 
 LINKS = [("x", "x", "@sethiHQ"), ("linkedin", "linkedin", "sethihq")]
@@ -53,7 +54,7 @@ def build(theme):
     letters = [c for c in INTRO if c != " "]
     rng = random.Random(7)  # fixed seed so the file only changes when the inputs do
 
-    body = [f'<g font-family="{MONO}" font-size="{afs}px" fill="{t["ink"]}">']
+    face = [f'<g id="face" font-family="{MONO}" font-size="{afs}px">']
     k = 0
     for y, row in enumerate(grid):
         cells = [(x, lv) for x, lv in enumerate(row) if lv != "0"]
@@ -75,8 +76,17 @@ def build(theme):
             spans.append(
                 f'<tspan x="{art_x + x * acw:.1f}" fill-opacity="{base}"{BOLD if lv == "5" else ""}>{escape(ch)}{glint}</tspan>'
             )
-        body.append(f'<text y="{art_y + y * alh + afs}">' + "".join(spans) + "</text>")
-    body.append("</g>")
+        face.append(f'<text y="{art_y + y * alh + afs}">' + "".join(spans) + "</text>")
+    face.append("</g>")
+
+    # the face once in ink, then again in blue seen only through a soft band that
+    # slides down it like a projector (a moving mask, so browsers repaint it inside <img>)
+    face_h = rows * alh
+    band_h = int(face_h * 0.22)
+    body = [
+        f'<use href="#face" fill="{t["ink"]}"/>',
+        f'<use href="#face" fill="{t["band"]}" mask="url(#sweep)"/>',
+    ]
 
     body.append(f'<g font-family="{MONO}" font-size="{tfs}px" fill="{t["text"]}">')
     for i, line in enumerate(lines):
@@ -96,7 +106,16 @@ def build(theme):
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" '
         f'aria-label="{escape(INTRO)}">',
         "<style>text,tspan{white-space:pre}</style>",
+        "<defs>",
+        '<linearGradient id="soft" x1="0" y1="0" x2="0" y2="1">'
+        '<stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff"/>'
+        '<stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>',
+        f'<mask id="sweep" maskUnits="userSpaceOnUse" x="0" y="0" width="{w}" height="{h}">'
+        f'<rect x="0" y="{art_y - band_h}" width="{w}" height="{band_h}" fill="url(#soft)">'
+        f'<animate attributeName="y" values="{art_y - band_h};{art_y - band_h};{art_y + face_h}" keyTimes="0;0.55;1" '
+        'dur="6s" repeatCount="indefinite"/></rect></mask>',
     ]
+    head += face + ["</defs>"]
     return "\n".join(head + body + ["</svg>"]) + "\n"
 
 
